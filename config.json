@@ -1,0 +1,25 @@
+{
+  "LOG": true,
+  "LOG_LEVEL": "info",
+  "HOST": "127.0.0.1",
+  "PORT": 3456,
+  "API_TIMEOUT_MS": 600000,
+  "Providers": [
+    {
+      "name": "openrouter",
+      "api_base_url": "https://openrouter.ai/api/v1/",
+      "api_key": "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",
+      "models": [
+        "qwen/qwen-2.5-7b-instruct",
+        "qwen/qwen-2.5-3b-instruct"
+      ]
+    }
+  ],
+  "Router": {
+    "default": "openrouter,qwen/qwen-2.5-7b-instruct",
+    "background": "openrouter,qwen/qwen-2.5-7b-instruct",
+    "think": "openrouter,qwen/qwen-2.5-7b-instruct",
+    "longContext": "openrouter,qwen/qwen-2.5-7b-instruct",
+    "longContextThreshold": 60000
+  }
+}
