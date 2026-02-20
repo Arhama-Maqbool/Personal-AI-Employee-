@@ -8,7 +8,7 @@
     {
       "name": "openrouter",
       "api_base_url": "https://openrouter.ai/api/v1/",
-      "api_key": "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",
+      "api_key": "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",
       "models": [
         "qwen/qwen-2.5-7b-instruct",
         "qwen/qwen-2.5-3b-instruct"
